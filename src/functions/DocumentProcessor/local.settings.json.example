@@ -1,0 +1,25 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "<storage-connection-string>",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "FUNCTIONS_EXTENSION_VERSION": "~4",
+
+    "BlobStorageConnection": "<storage-connection-string>",
+    "ServiceBusConnection": "<servicebus-connection-string>",
+
+    "COSMOS_ENDPOINT": "https://<cosmos-account>.documents.azure.com:443/",
+    "COSMOS_KEY": "<cosmos-primary-key>",
+
+    "AI_SERVICES_ENDPOINT": "https://<ai-services>.cognitiveservices.azure.com/",
+    "AI_SERVICES_KEY": "<ai-services-key>",
+
+    "AZURE_OPENAI_ENDPOINT": "https://<resource>.services.ai.azure.com/",
+    "AZURE_OPENAI_KEY": "<openai-key>",
+    "AZURE_OPENAI_DEPLOYMENT": "<gpt-deployment-name>",
+    "AZURE_OPENAI_EMBEDDING_DEPLOYMENT": "<embedding-deployment-name>",
+
+    "SEARCH_ENDPOINT": "https://<search-service>.search.windows.net",
+    "SEARCH_KEY": "<search-admin-key>"
+  }
+}
