@@ -167,7 +167,7 @@ MIT License
 
 ## 👤 Author
 
-[Your Name] - Enterprise Architect
+Amol Singh
 
 ---
 
