@@ -1,0 +1,35 @@
+{
+  "version": "2.0",
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[4.*, 5.0.0)"
+  },
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    },
+    "logLevel": {
+      "default": "Information",
+      "Host.Results": "Error",
+      "Function": "Information",
+      "Host.Aggregator": "Trace"
+    }
+  },
+  "extensions": {
+    "serviceBus": {
+      "prefetchCount": 0,
+      "messageHandlerOptions": {
+        "autoComplete": true,
+        "maxConcurrentCalls": 5,
+        "maxAutoRenewDuration": "00:10:00"
+      }
+    },
+    "blobs": {
+      "maxDegreeOfParallelism": 4
+    }
+  },
+  "functionTimeout": "00:10:00"
+}
